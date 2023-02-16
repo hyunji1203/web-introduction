@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>자기소개 - 뽀또</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+	<script src="../js/jScript.js"></script>
 	<style>
 		@import url(../css/style.css);
 	</style>
@@ -81,17 +82,17 @@
 		<br>
 		<h2 id="title">방명록</h2>
 		<div id="guestDiv">
-			이름: &nbsp;&nbsp; <input id="input" type="text"><br><br>
+			이름: &nbsp;&nbsp; <input id="input" type="text" name="name"><br><br>
 			* 본인 취향 영화<br>
-			<input type="checkbox" name="movie"> 겨울왕국2<br>
-			<input type="checkbox" name="movie"> 어벤져스: 인피니티 워<br>
-			<input type="checkbox" name="movie"> 비긴어게인<br>
-			<input type="checkbox" name="movie"> 나우유씨미2<br>
-			<input type="checkbox" name="movie"> 엔칸토
+			<label><input type="checkbox" name="movie" value="겨울왕국2">겨울왕국2<br></label>
+			<label><input type="checkbox" name="movie" value="어벤져스: 인피니티 워">어벤져스: 인피니티 워<br></label>
+			<label><input type="checkbox" name="movie" value="비긴어게인">비긴어게인<br></label>
+			<label><input type="checkbox" name="movie" value="인셉셥">인셉션<br></label>
+			<label><input type="checkbox" name="movie" value="엔칸토"> 엔칸토</label>
 		</div>
 		<br>
 		<div id="btnDiv">
-			<button type="button">등록</button>
+			<button type="button" id="registerBtn" onclick='test()'>등록</button>
 			<button type="reset">취소</button>
 		</div>
 	</div>
